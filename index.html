@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoTracker Pro - Live BTCUSDT Charts</title>
+    <!-- CSS and JavaScript links -->
+</head>
+<body class="dark-theme">
+    <div class="container">
+        <header>
+            <div class="logo">CryptoTracker Pro</div>
+            <div class="price-display">
+                <span id="current-price">Loading...</span>
+                <span id="price-change" class="change-indicator"></span>
+            </div>
+            <div class="connection-status">
+                <span id="connection-status">Connecting...</span>
+            </div>
+        </header>
+        
+        <main>
+            <div class="chart-container">
+                <div class="timeframe-selector">
+                    <button data-timeframe="1m">1m</button>
+                    <button data-timeframe="5m">5m</button>
+                    <button data-timeframe="1h">1h</button>
+                    <button data-timeframe="1d">1d</button>
+                </div>
+                <div id="candlestick-chart"></div>
+            </div>
+            
+            <aside class="indicators-panel">
+                <h3>Dynamic Support/Resistance</h3>
+                <div id="support-resistance-levels"></div>
+                
+                <h3>Liquidation Tracking</h3>
+                <div id="liquidation-data"></div>
+            </aside>
+        </main>
+    </div>
+</body>
+</html>
